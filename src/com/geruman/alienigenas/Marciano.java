@@ -1,6 +1,6 @@
 package com.geruman.alienigenas;
 
-public class Marciano implements Alienigena {
+public class Marciano extends Alienigena {
 
 	@Override
 	public String hablar() {
