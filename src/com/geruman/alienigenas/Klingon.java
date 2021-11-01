@@ -1,6 +1,6 @@
 package com.geruman.alienigenas;
 
-public class Klingon extends Alienigena {
+public class Klingon implements Alienigena {
 
 	@Override
 	public String hablar() {

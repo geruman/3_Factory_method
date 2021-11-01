@@ -1,6 +1,6 @@
 package com.geruman.alienigenas;
 
-public class Neptuneano extends Alienigena {
+public class Neptuneano implements Alienigena {
 
 	@Override
 	public String hablar() {

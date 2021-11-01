@@ -5,16 +5,17 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import com.geruman.alienigenas.Alienigena;
+import com.geruman.alienigenas.AlienigenaFactory;
 import com.geruman.alienigenas.Alienigenas;
 
-class FactoryMethodTests {
+class AlienigenaFactoryMethodTests {
 
 	@Test
 	void test() {
-		Alienigena marciano = Alienigena.crearAlienigena(Alienigenas.MARCIANO);
-		Alienigena neptunenao = Alienigena.crearAlienigena(Alienigenas.NEPTUNEANO);
-		Alienigena klingon = Alienigena.crearAlienigena(Alienigenas.KLINGON);
-		Alienigena alienigenaNulo = Alienigena.crearAlienigena(null);
+		Alienigena marciano = AlienigenaFactory.crearAlienigena(Alienigenas.MARCIANO);
+		Alienigena neptunenao = AlienigenaFactory.crearAlienigena(Alienigenas.NEPTUNEANO);
+		Alienigena klingon = AlienigenaFactory.crearAlienigena(Alienigenas.KLINGON);
+		Alienigena alienigenaNulo = AlienigenaFactory.crearAlienigena(null);
 		assertTrue("Soy un marciano".equals(marciano.hablar()));
 		assertTrue("Soy un neptuneano".equals(neptunenao.hablar()));
 		assertTrue("Soy un klingon".equals(klingon.hablar()));
