@@ -1,7 +1,9 @@
 package com.geruman.alienigenas;
 
 public abstract class Alienigena {
+	
 	public abstract String hablar();
+	
 	public static Alienigena crearAlienigena(Alienigenas tipoAlienigena) {
 		if(tipoAlienigena == Alienigenas.MARCIANO) {
 			return new Marciano();
